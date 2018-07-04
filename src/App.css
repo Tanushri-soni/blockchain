@@ -3,7 +3,12 @@
 body,
 .pure-g [class*=pure-u] {
   font-family: 'Open Sans', sans-serif;
-}
+  background-image: url("/bg3.png");  
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+
+
 
 h1, h2, h3 {
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
@@ -20,18 +25,32 @@ code {
   box-sizing: border-box;
   width: 100%;
   padding: 45px 20px;
+
 }
 
 .pure-button-primary {
-  background-color: #0c1a2b;
+  /*background-color: #0c1a2b;*/
+
+  padding: 7px;
+  font-size: 15px;   
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #C0C0C0;
+  background-color: #272727;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 3px #999;
 }
 
 .pure-button-primary:hover {
-  background-color: #233e5e;
+  /*background-color: #233e5e;*/
+  background-color: #272727;
 }
 
 .pure-form input[type="text"]:focus {
-  border-color: #0c1a2b;
+  border-color: #272727;
 }
 
 /* NAVBAR */
@@ -39,8 +58,9 @@ code {
 .navbar {
   position: fixed;
   padding: 5px;
-  background: #ff0000;
+  background: #272727;
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
+  text-align: center;
 }
 
 .navbar a {
@@ -50,12 +70,12 @@ code {
 .navbar a:active,
 .navbar a:focus,
 .navbar a:hover {
-  background: #233e5e;
+  background: #272727;
 }
 
 .navbar .pure-menu-heading {
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 }
 
 .navbar .navbar-right {
